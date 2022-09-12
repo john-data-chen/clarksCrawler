@@ -1,0 +1,27 @@
+{
+    "name": "Clarks Grip Trade Ch00",
+    "brand": "Clarks",
+    "category": "Boys",
+    "colour": [
+        {
+            "colourName": "Black Leather",
+            "availableSize": [
+                "C13 (32)",
+                "1 (33)",
+                "2 (34)"
+            ],
+            "unavailableSize": []
+        }
+    ],
+    "imageUrl": "https://images.houseoffraser.co.uk/images/products/02358903_l.jpg",
+    "price": 50.0,
+    "priceInBaseUnit": 50.0,
+    "productId": "023589",
+    "sku": "02358903130",
+    "subCategory": "Moc Toe Shoes",
+    "activity": "Formal",
+    "activityGroup": "Formal Shoes",
+    "colcode": [
+        "https://www.houseoffraser.co.uk/brand/clarksclarks-grip-trade-ch00-023589#colcode=02358903"
+    ]
+}
