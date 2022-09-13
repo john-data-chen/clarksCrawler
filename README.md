@@ -9,6 +9,7 @@
 ## 不同顏色是用網址參數 colcode 作為分隔，但爬取尺寸時只用 requests 會碰到網址已更改但尺寸數據不變的反爬措施，一定要用 selenium chromedriver
 ## selenium chromedriver 請到 https://chromedriver.chromium.org/home 下載 版本號: 105.0.5195.52 或與你目前 Chrome 相同的版本號 然後放到 /usr/local/bin/chromedriver 這個路徑下
 ## 或是到 Line 18 自行修改 chromedriver 路徑
+## 目前 selenium header-less 模式執行上有點問題，尚待修復
 
 # 如何維持爬取資料的正確性和即時性
 ## 以 Line 13 為例，基本的反制手段，盡量偽裝成人類： header 隨機 user-agent 偽裝成不同瀏覽器 / 加入 Referer / 隨機暫停，雖然隨機暫停會犧牲一些時間，但是也比較不會被對方直接封鎖
