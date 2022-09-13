@@ -4,16 +4,16 @@
     "category": "Men's Boots",
     "colour": [
         {
-            "colourName": "Dark Brown",
+            "colourName": "Maple Suede",
             "availableSize": [
                 "7 (41)",
                 "8 (42)",
                 "9 (43)",
-                "10 (45)"
-            ],
-            "unavailableSize": [
                 "10 (44.5)",
                 "11 (46)"
+            ],
+            "unavailableSize": [
+                "10 (45)"
             ]
         },
         {
@@ -30,6 +30,19 @@
             ]
         },
         {
+            "colourName": "Dark Brown",
+            "availableSize": [
+                "7 (41)",
+                "8 (42)",
+                "9 (43)",
+                "10 (45)"
+            ],
+            "unavailableSize": [
+                "10 (44.5)",
+                "11 (46)"
+            ]
+        },
+        {
             "colourName": "Light Tan Suede",
             "availableSize": [
                 "7 (41)",
@@ -40,19 +53,6 @@
             ],
             "unavailableSize": [
                 "10 (44.5)"
-            ]
-        },
-        {
-            "colourName": "Maple Suede",
-            "availableSize": [
-                "7 (41)",
-                "8 (42)",
-                "9 (43)",
-                "10 (44.5)",
-                "11 (46)"
-            ],
-            "unavailableSize": [
-                "10 (45)"
             ]
         }
     ],
@@ -65,9 +65,9 @@
     "activity": "Fashion",
     "activityGroup": "Casual Boots",
     "colcode": [
-        "https://www.houseoffraser.co.uk/brand/clarksdesert-coal-boot-119481#colcode=11948105",
+        "https://www.houseoffraser.co.uk/brand/clarksdesert-coal-boot-119481#colcode=11948113",
         "https://www.houseoffraser.co.uk/brand/clarksdesert-coal-boot-119481#colcode=11948103",
-        "https://www.houseoffraser.co.uk/brand/clarksdesert-coal-boot-119481#colcode=11948169",
-        "https://www.houseoffraser.co.uk/brand/clarksdesert-coal-boot-119481#colcode=11948113"
+        "https://www.houseoffraser.co.uk/brand/clarksdesert-coal-boot-119481#colcode=11948105",
+        "https://www.houseoffraser.co.uk/brand/clarksdesert-coal-boot-119481#colcode=11948169"
     ]
 }

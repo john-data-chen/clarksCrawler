@@ -22,9 +22,8 @@ headers = {
 chromedriver = '/usr/local/bin/chromedriver'
 options = Options()
 options.add_argument("--disable-notifications")
-options.add_argument('--disable-gpu') 
+options.add_argument('--disable-gpu')
 options.add_argument('--no-sandbox')
-# options.add_argument('--headless')
 
 output = './output'
 
@@ -63,7 +62,6 @@ def baseCrawler(url):
         # items < 36 = this is the last page, break loop
         if len(hrefs) < 36:
             break
-    print(itemUrls)
     return itemUrls
 
 
@@ -76,7 +74,7 @@ def itemCrawler(itemUrls):
         try:
             html = requests.get(url, headers=headers).text
         except:
-            pass
+            continue
         soup = BeautifulSoup(html, 'lxml')
         info = json.loads(
             soup.find('input',
@@ -115,13 +113,17 @@ def sizeCrawler(items):
                     driver.implicitly_wait(10)
                     soup = BeautifulSoup(driver.page_source, 'lxml')
                     wait = WebDriverWait(driver, 100)
-                    wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="onetrust-accept-btn-handler"]')))
-                    driver.find_element_by_xpath('//*[@id="onetrust-accept-btn-handler"]').click()
-
+                    wait.until(
+                        EC.element_to_be_clickable(
+                            (By.XPATH,
+                             '//*[@id="onetrust-accept-btn-handler"]')))
+                    driver.find_element_by_xpath(
+                        '//*[@id="onetrust-accept-btn-handler"]').click()
+                    driver.quit()
                 except:
                     driver.quit()
                     pass
-            
+
             # print(soup)
             colour = soup.find('span', {'id': 'colourName'})
             item['colour'].append({
@@ -161,8 +163,16 @@ def dataOutput(items):
             del item['variant']
         if 'budgetCurve' in item:
             del item['budgetCurve']
-        with open('./output' + '/' + item['sku'] + '.json', 'w') as f:
-            json.dump(item, f, indent=4)
+
+        if len(item['colour']) == 0:
+            print('colour&size data is empty!')
+            # send warning...
+        try:
+            with open('./output' + '/' + item['sku'] + '.json', 'w') as f:
+                json.dump(item, f, indent=4)
+        except:
+            # send warning...
+            continue
 
 
 if __name__ == '__main__':

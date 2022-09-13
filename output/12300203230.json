@@ -1,0 +1,43 @@
+{
+    "name": "Clarks Ladies Hamble Oak Shoes",
+    "brand": "Clarks",
+    "category": "Women's Shoes",
+    "colour": [
+        {
+            "colourName": "Dark Tan Lea",
+            "availableSize": [
+                "3 (35.5)",
+                "4 (37)",
+                "5 (38)",
+                "6 (39.5)",
+                "7 (41)",
+                "8 (42)"
+            ],
+            "unavailableSize": []
+        },
+        {
+            "colourName": "Black Leather",
+            "availableSize": [
+                "3 (35.5)",
+                "4 (37)",
+                "5 (38)",
+                "6 (39.5)",
+                "7 (41)",
+                "8 (42)"
+            ],
+            "unavailableSize": []
+        }
+    ],
+    "imageUrl": "https://images.houseoffraser.co.uk/images/products/12300203_l.jpg",
+    "price": 52.0,
+    "priceInBaseUnit": 52.0,
+    "productId": "123002",
+    "sku": "12300203230",
+    "subCategory": "Smart Shoes",
+    "activity": "Fashion",
+    "activityGroup": "Formal Shoes",
+    "colcode": [
+        "https://www.houseoffraser.co.uk/brand/clarksclarks-ladies-hamble-oak-shoes-123002#colcode=12300205",
+        "https://www.houseoffraser.co.uk/brand/clarksclarks-ladies-hamble-oak-shoes-123002#colcode=12300203"
+    ]
+}
